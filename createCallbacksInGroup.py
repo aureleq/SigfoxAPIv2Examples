@@ -2,7 +2,7 @@
 import requests
 
 API_URL = "https://api.sigfox.com/v2/"
-API_USER = "YOUR API USER" # Backend API USER for ST workshop group with Device Manager W rights
+API_USER = "YOUR API USER" # Backend API USER with Device Manager W rights
 API_PWD = "YOUR API PASSWORD"
 
 deviceTypes = requests.get(API_URL + "device-types/", auth=(API_USER, API_PWD)).json()
